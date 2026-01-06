@@ -5,7 +5,7 @@ num_workers: 4
 batch_size: 4
 lr: 5e-5
 # Change these directories to your local dataset
-Train_data_dir: /home/yhan364/new_upload
+Train_data_dir: r'C:\Users\chong\Desktop\new_upload'
 Fruit_type: [apple, lemon, orange, plum, tomato]
 Test_type: [kiwi]
 Tactile_Image_width: 200  # Raw Image width (for slip detection dataset)
@@ -16,8 +16,8 @@ Visual_Image_height: 480
 Visual_scale_ratio: 0.25  #Raw image size (480, 640) -> resized image (480 * scale_ratio, 640 * scale_ratio)
 #scale_ratio: 0.25  #Raw image size (480, 640) -> resized image (480 * scale_ratio, 640 * scale_ratio)
 video_length: 8
-Model_name: basic_CNN # place with your model name
-# other options: timeSformer_orig_two, vivit_fdp_two
+Model_name: timeSformer_orig_two # place with your model name
+# other options: basic_CNN, vivit_fdp_two
 Modality: Combined # For grasping framwork, we only used Combined
 base_network: resnet18 # only used for the basic_CNN architecture, there are some other options
 # vgg_19; inception_v3; alexnet(debug)
@@ -34,3 +34,4 @@ use_random_seed: 1  #Set to 1 to use random seed. Otherwise, seed below is used 
 seed: 42 #Only used if use_random_seed = 1
 skip_init_in_train: 1
 test_eval: 1
+
