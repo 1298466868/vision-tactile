@@ -5,7 +5,7 @@ num_workers: 4
 batch_size: 4
 lr: 5e-5
 # Change these directories to your local dataset
-Train_data_dir: r'C:\Users\chong\Desktop\new_upload'
+Train_data_dir: /home/chong/datasets/FruitData/new_upload
 Fruit_type: [apple, lemon, orange, plum, tomato]
 Test_type: [kiwi]
 Tactile_Image_width: 200  # Raw Image width (for slip detection dataset)
@@ -34,4 +34,5 @@ use_random_seed: 1  #Set to 1 to use random seed. Otherwise, seed below is used 
 seed: 42 #Only used if use_random_seed = 1
 skip_init_in_train: 1
 test_eval: 1
+
 
