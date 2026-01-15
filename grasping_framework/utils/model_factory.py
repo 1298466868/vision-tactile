@@ -2,7 +2,7 @@ import sys
 import functools
 import torch.nn as nn
 sys.path.append("..")
-from Models import  vivit_FDP_two, vivit_FDP_two_fruit, basic_CNN, timeSformer_orig_two, timeSformer_orig_two_fruit
+from Models import vivit_FDP_two, basic_CNN, timeSformer_orig_two
 # Todo: add other model architecture and put them under ../Models
 
 # Build and return the model here based on the configuration.
